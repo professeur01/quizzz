@@ -127,6 +127,8 @@ nav {
 
 .menu_block ul li {
     list-style: none;
+    display: flex;
+    align-items: center;
 
 
     cursor: pointer;
