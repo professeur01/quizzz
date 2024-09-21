@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/validation.css" />
+
+    <title>Validation lci</title>
+  </head>
+  <body>
+    <div class="menu_block">
+      <div class="first_block">
+        <img
+          src="../images/Logo NINETEC copie_221221_151748_1.jpg"
+          alt="logo ninetec"
+        />
+      </div>
+      <ul>
+        <a href="./dashboard.html">
+          <li>
+            <img src="../images/dash_icon.png" alt="dashboard icon" />Dashboard
+          </li></a
+        >
+        <a href="./ecrireLci.html"
+          ><li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-pen-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"
+              /></svg
+            >Ecrire un LCI
+          </li></a
+        >
+        <a href="./listeLci.html">
+          <li>
+            <img src="../images/liste_icon.png" alt="liste icon" />
+            Listes des LCI
+          </li></a
+        >
+        <a href="./validation.html">
+          <li>
+            <img src="../images/done_icon.png" alt="validation icon" />
+            Validation LCI
+          </li></a
+        >
+      </ul>
+      <div class="last_block">
+        <a href="./login.html"
+          ><img src="../images/Logout.png" alt="" />Déconnexion</a
+        >
+      </div>
+    </div>
+    <div class="navbar_block">
+      <nav class="navbar">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-bell-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+          />
+        </svg>
+        <div class="clock-container">
+          <div id="date"></div>
+          <div id="time"></div>
+        </div>
+        <img
+          class="photo_profil"
+          src="../images/photo_profil.png"
+          alt="photo de profil"
+        />
+      </nav>
+      <div class="info_block">
+        <h1 style="text-decoration: underline">VALIDATION DES LCI</h1>
+        <div class="checkbox_container">
+          <div class="status-options">
+            <label class="custom-checkbox">
+              <input type="checkbox" name="status" value="pending" />
+              <span class="checkmark"></span>
+              En attente
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="status" value="validated" />
+              <span class="checkmark"></span>
+              Valider
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="status" value="in_process" />
+              <span class="checkmark"></span>
+              En traitement
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="status" value="completed" />
+              <span class="checkmark"></span>
+              Terminer
+            </label>
+          </div>
+        </div>
+        <div class="valide_lci_list">
+          <div>
+            <button class="valider_list">Valider LCI</button>
+          </div>
+          <div class="valide_lci_item">
+            <input type="checkbox" name="status" value="valide_list" />
+            <span class="checkmark"></span>
+            List 1
+          </div>
+          <div class="valide_lci_item">
+            <input type="checkbox" name="status" value="valide_list" />
+            <span class="checkmark"></span>
+            List 2
+          </div>
+          <div class="valide_lci_item">
+            <input type="checkbox" name="status" value="valide_list" />
+            <span class="checkmark"></span>
+            List 3
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../scripts/ecrireLci.js"></script>
+  <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</html>
